@@ -3,4 +3,4 @@
 - ansible
 - docker
 - docker-compose
-- cloud server
+- selectel cloud server
