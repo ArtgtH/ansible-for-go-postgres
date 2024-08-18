@@ -13,6 +13,16 @@
         update: yes
       tags: clone-repo
     
+    - name: clear docker context
+      community.docker.docker_prune:
+        containers: yes
+        images: yes
+        networks: yes
+        volumes: yes
+        builder_cache: yes
+      tags: clear-context
+
+
     - name: start container
       community.docker.docker_compose:
         project_src: "{{ path }}"
